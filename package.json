@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier  \"src/**/*.+(ts|js|html|json)\" --check",
+    "prettier:fix": "prettier --write \"src/**/*.+(ts|js|html|json)\"",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -17,10 +20,20 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "5.27.1",
     "commitlint": "^17.4.2",
-    "prettier": "2.7.1",
-    "lint-staged": "^13.1.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^30.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.7.1",
+    "prettier-eslint": "^15.0.1",
     "typescript": "^4.9.4"
   }
 }
