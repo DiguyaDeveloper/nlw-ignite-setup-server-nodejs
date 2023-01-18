@@ -12,6 +12,10 @@
 
 The purpose of this project is to help the creation of new Nodejs and typescript projects, preparing configurations for auto code formatting, automations with githooks and validations with commitlint | lint-staged | prettier
 
+Consider update all dependencies because may be out of date
+
+Consider check your necessit before start your project based in this boilerplate, that project has use typescript, eslint, prettier, commitlint, eslint, husky
+
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -24,11 +28,19 @@ What things you need to install the software and how to install them.
 Nodejs
 ```
 
+### Update dependencies
+
+Run script to update all dependencies
+
+```
+npm run update --save
+```
+
+then the dependency manager informs the completion of the process.
+
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Run
+Run script to install dependencies
 
 ```
 npm install
