@@ -9,12 +9,15 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier": "npx prettier  \"src/**/*.+(ts|js|html|json)\" --check",
     "prettier:fix": "prettier --write \"src/**/*.+(ts|js|html|json)\"",
+    "migration:dev": "npx prisma migrate dev",
     "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^8.2.0",
+    "@prisma/client": "^4.9.0",
     "fastify": "^4.11.0"
   },
   "devDependencies": {
@@ -34,6 +37,7 @@
     "lint-staged": "^13.1.0",
     "prettier": "2.7.1",
     "prettier-eslint": "^15.0.1",
+    "prisma": "^4.9.0",
     "typescript": "^4.9.4"
   }
 }
